@@ -31,7 +31,7 @@ public Person create(CreatePersonDTO dto) {
             .years(dto.getYears())
             .endress(dto.getEndress())
             .country(dto.getCountry())
-            .user(user) // associação aqui
+            .user(user)
             .build();
 
     return personRepository.save(person);

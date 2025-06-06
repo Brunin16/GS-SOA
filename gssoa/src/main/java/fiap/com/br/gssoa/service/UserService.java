@@ -19,7 +19,7 @@ public class UserService {
     public User create(CreateUserDTO dto) {
         User user = User.builder()
                 .username(dto.getUsername())
-                .password(dto.getPassword()) // Você pode adicionar hashing futuramente
+                .password(dto.getPassword()) 
                 .build();
 
         return userRepository.save(user);
